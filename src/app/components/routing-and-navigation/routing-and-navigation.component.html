@@ -1,0 +1,112 @@
+<!-- <div class="container mt-5">
+    <h1 class="text-center mb-4">Routing and Navigation</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Routing Configuration
+        </div>
+        <div class="card-body">
+            <p>Define routes in the app-routing.module.ts file:</p>
+            <code>
+                {{code}}
+            </code>
+            <p>Syntax: <code>&lt;a routerLink="/path"&gt;</code></p>
+        </div>
+    </div>
+</div> -->
+<!-- <app-modules></app-modules> -->
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Routing and Navigation</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Routing?
+        </div>
+        <div class="card-body">
+            <p>
+                Routing in Angular allows you to navigate between different views or components within a single-page application (SPA). 
+                It defines how users move from one page to another by configuring paths in the app’s routing module.
+            </p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Setting Up Routing
+        </div>
+        <div class="card-body">
+            <p>To set up routing, you define routes in the <code>app-routing.module.ts</code> file. Here’s a basic example:</p>
+            <code><pre>
+                {{code1}}
+            </pre>
+            </code>
+            <p>
+                In this example, the <code>routes</code> array defines the application’s routes. The <code>path</code> specifies the URL, and the 
+                <code>component</code> determines which component should be displayed when the user navigates to that path. 
+                The empty path <code>''</code> redirects the user to the <code>home</code> component as the default route.
+            </p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Using RouterLink for Navigation
+        </div>
+        <div class="card-body">
+            <p>
+                Angular provides the <code>routerLink</code> directive to enable navigation in the template. 
+                The <code>routerLink</code> attribute is used in anchor tags to bind the path and navigate between routes:
+            </p>
+            <code>
+<!-- In your HTML template -->
+<nav>
+  <a routerLink="/pipes">Pipes</a>
+  <br/>
+  <a routerLink="/forms">Forms</a>
+</nav>
+            </code>
+            <p>
+                When users click on these links, Angular dynamically loads the associated component without a full page reload.
+            </p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            RouterOutlet
+        </div>
+        <div class="card-body">
+            <p>
+                The <code>&lt;router-outlet&gt;</code> directive acts as a placeholder where Angular inserts the component 
+                corresponding to the current route. For example:
+            </p>
+            <code>
+<!-- In your main component template -->
+<router-outlet></router-outlet>
+            </code>
+            <p>
+                This directive renders the routed component inside the <code>&lt;router-outlet&gt;</code> element based on the current URL.
+            </p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Nested Routes
+        </div>
+        <div class="card-body">
+            <p>
+                Angular also supports nested routes, allowing you to create sub-routes for more complex navigation. 
+                You can define child routes within a parent route:
+            </p>
+        <pre><code>
+{{code2}}
+            </code></pre>
+            <p>
+                In this example, the <code>DashboardComponent</code> will have its own navigation, and the child routes 
+                like <code>stats</code> and <code>reports</code> will be rendered within the dashboard layout.
+            </p>
+        </div>
+    </div>
+</div>

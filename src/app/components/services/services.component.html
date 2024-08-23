@@ -1,0 +1,82 @@
+<!-- <h1>Angular Services Cheatsheet</h1>
+
+<h2>Creating Services</h2>
+<p>Create a new service using the Angular CLI: <code>ng generate service my-service</code>.</p>
+
+<h2>Injecting Services</h2>
+<p>Inject a service into a component using Angular's dependency injection system.</p>
+<code>
+{{constructorCode}}
+</code>
+
+<h2>HTTP Client Service</h2>
+<p>Use the `HttpClient` service to make HTTP requests.</p>
+<code>
+    {{ code }}
+</code>
+<p>The data from the API is logged to the console when the response is received.</p> -->
+
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Services Cheatsheet</h1>
+
+    <!-- Creating Services -->
+    <div class="card mb-3">
+        <div class="card-header">
+            What is services in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Services in Angular are classes that provide functionality to other parts of your application. They are
+                used to share data, handle asynchronous operations, and encapsulate reusable logic.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key benefits of using services:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Code reusability: Services can be reused across multiple components.</li>
+                <li>Modularity: They help organize your code into smaller, more manageable units.</li>
+                <li>Testability: Services are easier to test independently.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            How to create a service:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Create a new class: Define a class with the necessary methods and properties.</li>
+                <li>Decorate the class with '&#64;Injectable': This tells Angular that the class is a service.</li>
+                <li>Register the service: Add the service to the providers array in your NgModule.</li>
+            </ul>
+            <h6>Example:</h6>
+            <pre><code>
+                {{code1}}
+            </code></pre>
+            <h6>Injecting services into components:</h6>
+            <p>To use a service in a component, inject it into the component's constructor:</p>
+            <pre><code>
+                {{code}}
+            </code></pre>
+        </div>
+    </div>
+
+    <!-- Injecting Services -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Common use cases for services:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Data fetching: Fetching data from APIs using HTTP services.</li>
+                <li>State management: Storing and managing application state.</li>
+                <li>Utility functions: Providing reusable functions for common tasks.</li>
+            </ul>
+            <p>By using services effectively, you can improve the modularity, reusability, and testability of your
+                Angular applications.</p>
+        </div>
+    </div>
+</div>

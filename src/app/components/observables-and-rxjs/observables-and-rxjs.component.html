@@ -1,0 +1,71 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Observables and RxJS</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Observables and RxJS in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Observables and RxJS are fundamental concepts in Angular for handling asynchronous operations like data
+                fetching from APIs, timers, and user events.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Observable:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Represents a stream of data: It can emit multiple values over time, unlike promises that only
+                    resolve once.</li>
+                <li>Can be subscribed to: When you subscribe to an observable, it starts emitting values.</li>
+                <li>Can be transformed: You can use operators provided by RxJS to transform the stream of data, such as
+                    filtering, mapping, combining, or creating new observables.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            RxJS:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>A library for reactive programming: It provides a set of operators and utilities for working with
+                    observables.</li>
+                <li>Core concepts: Subjects, operators, and subscriptions.</li>
+                <li>Common operators: map, filter, combineLatest, mergeMap, switchMap, forkJoin, and many more.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Example:
+        </div>
+        <div class="card-body">
+            <pre><code>
+                {{code}}
+            </code></pre>
+            <p>In this example:</p>
+            <ol>
+                <li>The users$ variable is an observable that will emit the list of users.</li>
+                <li>The http.get method returns an observable.</li>
+                <li>The observable is subscribed to automatically in the template (using the async pipe).</li>
+            </ol>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Benefits of using observables and RxJS:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Asynchronous operations: Handles asynchronous data streams effectively.</li>
+                <li>Composition: Operators allow you to combine and transform observables.</li>
+                <li>Error handling: Provides mechanisms for handling errors in the data stream.</li>
+                <li>Declarative programming: Code becomes more declarative and easier to understand.</li>
+            </ul>
+            <p>By understanding observables and RxJS, you can write more efficient and maintainable Angular applications
+                that handle asynchronous operations effectively.</p>
+        </div>
+    </div>
+</div>

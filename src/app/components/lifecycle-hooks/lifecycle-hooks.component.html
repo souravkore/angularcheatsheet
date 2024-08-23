@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Lifecycle Hooks</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Lifecycle hooks in Angular
+        </div>
+        <div class="card-body">
+            <p>Lifecycle hooks in Angular are methods that are automatically called at specific points in a component's
+                lifecycle. They provide a way to perform actions at different stages of a component's existence, such as
+                initialization, updates, and destruction.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Common lifecycle hooks:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>ngOnInit(): Called once after the component's constructor and initial data binding are complete.</li>
+                <li>ngOnChanges(): Called whenever a component's input properties change.</li>
+                <li>ngDoCheck(): Called after every change detection run, whether or not the component's bindings have changed.</li>
+                <li>ngAfterContentInit(): Called after Angular projects content into the component's view.</li>
+                <li>ngAfterContentChecked(): Called after every check of the component's content.</li>
+                <li>ngAfterViewInit(): Called after Angular has initialized the component's view and child views.</li>
+                <li>ngAfterViewChecked(): Called after every check of the component's view and child views.</li>
+                <li>ngOnDestroy(): Called when the component is about to be destroyed.</li>
+            </ul>
+            <h6>Example:</h6>
+            <pre><code>
+                {{code}}
+            </code></pre>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Use cases for lifecycle hooks:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Initialization: Perform tasks like fetching data or setting up subscriptions in ngOnInit.</li>
+                <li>Data updates: React to changes in input properties in ngOnChanges.</li>
+                <li>DOM manipulation: Perform DOM manipulations after the view is initialized in ngAfterViewInit.</li>
+                <li>Cleanup: Clean up resources like subscriptions or timers in ngOnDestroy.</li>
+            </ul>
+            <p>By understanding and using lifecycle hooks effectively, you can create more robust and efficient Angular components.</p>
+        </div>
+    </div>
+</div>

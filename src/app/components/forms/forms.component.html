@@ -1,0 +1,138 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Forms</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Forms in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Forms in Angular are a powerful way to capture user input and interact with your application. They
+                provide a structured way to collect data from users and validate it before submitting.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key components of Angular forms
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>FormGroup: Represents the entire form and contains a collection of form controls.</li>
+                <li>FormControl: Represents a single input element in the form, such as a text field, checkbox, or
+                    select.</li>
+                <li>FormBuilder: A helper class to create form groups and controls.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            How forms works ?
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Create a form group: Use the FormBuilder to create a FormGroup object.</li>
+                <li>Add form controls: Add FormControl objects to the FormGroup.</li>
+                <li>Bind form controls to HTML elements: Use template syntax to bind form controls to HTML input
+                    elements.</li>
+                <li>Validate form data: Use built-in validators or create custom validators to ensure data integrity.
+                </li>
+                <li>Handle form submission: Listen for form submission events and process the submitted data.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Example :
+        </div>
+        <div class="card-body">
+            <pre><code>
+{{code}}
+            </code></pre>
+            <p>Forms in Angular provide a flexible and efficient way to build interactive user interfaces that capture
+                and
+                validate user input. They are an essential part of many Angular applications.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Types of Forms:
+        </div>
+        <div class="card-body">
+            <p>Angular provides two primary approaches for building forms:</p>
+            <ul>
+                <li>Reactive Forms</li>
+                <li>Template-Driven Forms</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Reactive Forms
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Programmatic approach: Forms are created and managed entirely in TypeScript code.</li>
+                <li>Flexibility: Offers greater control over form behavior and validation.</li>
+                <li>Complexity: Requires more code and a deeper understanding of reactive programming principles.</li>
+            </ul>
+            <h6>Example:</h6>
+            <pre>
+            <code>
+                {{reactiveForms}}
+            </code>
+            </pre>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Template-Driven Forms
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Declarative approach: Forms are defined directly in the HTML template.</li>
+                <li>Simplicity: Easier to learn and implement for basic form scenarios.</li>
+                <li>Limitations: Less flexible for complex form scenarios and custom validation.</li>
+            </ul>
+            <h6>Example:</h6>
+            <pre>
+            <code>
+                {{templateDrivenForms}}
+            </code>
+            </pre>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key Differences:
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Reactive Forms</th>
+                    <th scope="col">Template-Driven Forms</th>
+                </tr>
+                <tr>
+                    <td>Creation</td>
+                    <td>Programmatically in TypeScript</td>
+                    <td>Defined in HTML template</td>
+                </tr>
+                <tr>
+                    <td>Validation</td>
+                    <td>Custom validators and reactive programming</td>
+                    <td>Built-in validators and ngForm</td>
+                </tr>
+                <tr>
+                    <td>Flexibility</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Complexity</td>
+                    <td>Higher</td>
+                    <td>Lower</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

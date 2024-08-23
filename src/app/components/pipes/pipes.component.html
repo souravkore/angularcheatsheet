@@ -1,0 +1,53 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Pipes in Angular</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is pipe in Angular ?
+        </div>
+        <div class="card-body">
+            <p>In Angular, a pipe is a simple function that takes an input value and transforms it into a desired
+                output. It's often used to format data, such as converting dates, currencies, or filtering lists.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Why do we need pipes?
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Data Formatting: Pipes make it easier to present data in a readable and consistent way. For example,
+                    you can use a date pipe to format a timestamp as a human-readable date.</li>
+                <li>Data Transformation: Pipes can transform data in various ways, like filtering arrays based on
+                    specific criteria or converting data types.</li>
+                <li>Reusability: Pipes can be reused throughout your Angular application, making your code more modular
+                    and maintainable.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Using Built-in Pipes
+        </div>
+        <div class="card-body">
+            <p>Transform data in the template using built-in pipes such as <code>currency</code>, <code>date</code>,
+                <code>uppercase</code>, etc.
+            </p>
+            <p>Example: <code>{{ value | currency:'USD' }}</code> converts a number to currency format.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Custom Pipes
+        </div>
+        <div class="card-body">
+            <p>Create custom pipes to transform data in a customized way.</p>
+            <pre><code>
+                {{code}}
+            </code></pre>
+            <p>This will display the value of name with the first letter capitalized.</p>
+        </div>
+    </div>
+</div>

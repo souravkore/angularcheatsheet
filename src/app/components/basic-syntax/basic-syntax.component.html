@@ -1,0 +1,130 @@
+<!-- <div class="container mt-5">
+    <h1 class="text-center mb-4">Basic Syntax Cheatsheet</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Interpolation
+        </div>
+        <div class="card-body">
+            <p>Interpolation allows you to embed the result of an expression inside the HTML by using {{curlybraces}}
+            </p>
+            <p class="border p-3">{{ message }}</p>
+            <p><strong>Output:</strong> Hello, Angular!</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Property Binding
+        </div>
+        <div class="card-body">
+            <p>Property binding allows you to set properties of HTML elements or directives using `[property]`.</p>
+            <input class="form-control mb-3" [value]="name">
+            <p><strong>Output:</strong> The input field will be pre-filled with {{name}}.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Event Binding
+        </div>
+        <div class="card-body">
+            <p>Event binding allows you to listen to user events like clicks or keypresses using `(event)`</p>
+            <button class="btn btn-primary" (click)="handleClick()">Click Me</button>
+            <p><strong>Output:</strong> When you click the button, an alert will be triggered with the message "Button
+                Clicked!".</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Two-Way Data Binding
+        </div>
+        <div class="card-body">
+            <p>Two-way data binding binds both the property and the event, allowing for synchronization between the
+                model and the view by using '[(ngModel)]'</p>
+            <input class="form-control mb-2" [(ngModel)]="name">
+            <p>Your name is: <span class="font-weight-bold">{{ name }}</span></p>
+            <p><strong>Output:</strong> Any change in the input field will update the `name` variable, and the paragraph
+                will show the updated name.</p>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Basics Cheatsheet</h1>
+
+    <!-- Creating New Angular Project -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Creating a New Angular Project
+        </div>
+        <div class="card-body">
+            <p>To create a new Angular project, use the Angular CLI. Run the following command:</p>
+            <code>ng new project-name</code>
+            <p><strong>Output:</strong> This command will create a new folder with Angular's default files and structure.</p>
+        </div>
+    </div>
+
+    <!-- Compiling the Project -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Compiling the Angular Project
+        </div>
+        <div class="card-body">
+            <p>To compile the Angular project, use the following command:</p>
+            <code>ng serve</code>
+            <p><strong>Output:</strong> This command will compile the project and serve it on <strong>localhost:4200</strong>.</p>
+        </div>
+    </div>
+
+    <!-- Interpolation -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Interpolation
+        </div>
+        <div class="card-body">
+            <p>Interpolation allows you to embed the result of an expression inside the HTML using double curly braces <code>{{curlybraces}}</code>.</p>
+            <p class="border p-3">{{ message }}</p>
+            <p><strong>Output:</strong> Hello, Angular!</p>
+        </div>
+    </div>
+
+    <!-- Property Binding -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Property Binding
+        </div>
+        <div class="card-body">
+            <p>Property binding allows you to set properties of HTML elements or directives using <code>[property]</code>.</p>
+            <input class="form-control mb-3" [value]="name">
+            <p><strong>Output:</strong> The input field will be pre-filled with {{name}}.</p>
+        </div>
+    </div>
+
+    <!-- Event Binding -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Event Binding
+        </div>
+        <div class="card-body">
+            <p>Event binding allows you to listen to user events like clicks or keypresses using <code>(event)</code>.</p>
+            <button class="btn btn-primary" (click)="handleClick()">Click Me</button>
+            <p><strong>Output:</strong> When you click the button, an alert will be triggered with the message "Button Clicked!".</p>
+        </div>
+    </div>
+
+    <!-- Two-Way Data Binding -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Two-Way Data Binding
+        </div>
+        <div class="card-body">
+            <p>Two-way data binding binds both the property and the event, allowing for synchronization between the model and the view using <code>[(ngModel)]</code>.</p>
+            <input class="form-control mb-2" [(ngModel)]="name">
+            <p>Your name is: <span class="font-weight-bold">{{ name }}</span></p>
+            <p><strong>Output:</strong> Any change in the input field will update the <code>name</code> variable, and the paragraph will reflect the updated name.</p>
+        </div>
+    </div>
+</div>

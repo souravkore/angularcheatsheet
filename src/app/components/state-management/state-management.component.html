@@ -1,0 +1,70 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">State Management with NgRx</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is state management in Angular ?
+        </div>
+        <div class="card-body">
+            <p>State management in Angular refers to the process of managing and sharing data across different
+                components in your application. It ensures that your application's state remains consistent and
+                up-to-date.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Common approaches to state management in Angular:
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Component-to-component communication:
+                    <ul>
+                        <li>&#64;Input() and &#64;Output() decorators: Used to pass data between parent and child
+                            components.</li>
+                        <li>Services: Shared services can be used to store and share data across multiple components.
+                        </li>
+                    </ul>
+                </li>
+                <li>State management libraries:
+                    <ul>
+                        <li>NgRx: A popular state management library based on Redux, providing a predictable and
+                            scalable approach.</li>
+                        <li>Akita: Another powerful state management library with a focus on simplicity and performance.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key concepts in state management:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>State: The current data or information that defines the application's behavior.</li>
+                <li>Actions: Events that trigger changes to the state.</li>
+                <li>Reducer: A pure function that takes the current state and an action, and returns a new state.</li>
+                <li>Store: A centralized location where the state is stored and updated.</li>
+            </ul>
+            <h6>Example using NgRx</h6>
+            <pre><code>
+                {{code}}
+            </code></pre>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Choosing the right approach:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Small applications: Component-to-component communication might be sufficient.</li>
+                <li>Larger applications with complex state management: A state management library like NgRx or Akita can
+                    be beneficial.</li>
+            </ul>
+            <p>By effectively managing your application's state, you can create more predictable, maintainable, and
+                scalable Angular applications.</p>
+        </div>
+    </div>
+</div>

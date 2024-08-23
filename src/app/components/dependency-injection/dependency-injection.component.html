@@ -1,0 +1,58 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Dependency Injection</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Dependency Injection (DI) in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Dependency Injection (DI) in Angular is a technique where components get the services they need without
+                directly creating them. Instead, Angular provides these services to the components.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Why use DI?
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Reusability: Services can be reused across multiple components.</li>
+                <li>Testability: It's easier to test components when they don't create their own dependencies.</li>
+                <li>Maintainability: Code becomes more modular and easier to manage.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            How it works:
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Define a service: Create a class with the necessary methods and properties.</li>
+                <li>Register the service: Add the service to the providers array in the '&#64;NgModule' decorator.</li>
+                <li>Inject the service: Use the constructor to inject the service into a component.</li>
+            </ol>
+            <h6>Example:</h6>
+            <pre><code>
+                {{code}}
+            </code></pre>
+            <p>In this example, the MyService is provided globally, meaning it can be injected into any component. The
+                MyComponent injects the MyService into its constructor, allowing it to use the service's methods.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key points about DI in Angular:
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Dependency tree: Angular creates a dependency tree for components and injects services accordingly.
+                </li>
+                <li>Scopes: Services can be provided at different scopes like root, component, or module.</li>
+                <li>Providers: The providers array in '&#64;NgModule' specifies where to provide services.</li>
+            </ol>
+            <p>By understanding dependency injection, you can write more modular, testable, and maintainable Angular
+                applications.</p>
+        </div>
+    </div>
+</div>

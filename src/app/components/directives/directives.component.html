@@ -1,0 +1,128 @@
+<!-- <h1>Angular Directives Cheatsheet</h1>
+
+<h2>*ngIf Directive</h2>
+<p>The `*ngIf` directive conditionally includes a template based on a boolean expression.</p>
+<code>
+
+<p *ngIf="isVisible">This text is visible</p>
+<button (click)="toggleVisibility()">Toggle Visibility</button>
+</code>
+<p><strong>Output:</strong> The text will only be visible if `isVisible` is `true`. Clicking the button toggles the visibility.</p>
+
+<h2>*ngFor Directive</h2>
+<p>The `*ngFor` directive is used to loop through a list of items and render them in the template.</p>
+<code>
+
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+</code>
+<p><strong>Output:</strong> Displays a list of items, e.g., Item 1, Item 2, Item 3.</p>
+
+<h2>[ngClass] Directive</h2>
+<p>The `[ngClass]` directive dynamically assigns CSS classes based on component variables.</p>
+<code>
+
+<p [ngClass]="{ 'active': isActive }">This is a paragraph</p>
+<button (click)="toggleActive()">Toggle Active State</button>
+</code>
+<p><strong>Output:</strong> The paragraph will have the 'active' class applied or removed based on the `isActive` variable.</p>
+
+<h2>[ngStyle] Directive</h2>
+<p>The `[ngStyle]` directive dynamically sets inline styles for an element.</p>
+<code>
+
+<p [ngStyle]="{ 'color': textColor }">Styled Text</p>
+<button (click)="changeColor()">Change Color</button>
+</code>
+<p><strong>Output:</strong> The text color changes dynamically based on the `textColor` property.</p> -->
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Directives Cheatsheet</h1>
+  
+    <!-- *ngIf Directive -->
+    <div class="card mb-3">
+      <div class="card-header">
+        *ngIf Directive
+      </div>
+      <div class="card-body">
+        <h5>Description</h5>
+        <p>
+          The '*ngIf' directive conditionally includes a template based on a boolean expression.
+          If the expression evaluates to true, the template is included in the DOM, otherwise it's removed.
+        </p>
+        
+        <h5>Syntax</h5>
+        <code>{{code}}</code>
+        
+        <h5>Example</h5>
+        <button class="btn btn-warning mb-3" (click)="toggleVisibility()">Toggle Visibility</button>
+        <p *ngIf="isVisible" class="alert alert-info">This text is conditionally visible based on the value of 'isVisible'.</p>
+      </div>
+    </div>
+  
+    <!-- *ngFor Directive -->
+    <div class="card mb-3">
+      <div class="card-header">
+        *ngFor Directive
+      </div>
+      <div class="card-body">
+        <h5>Description</h5>
+        <p>
+          The '*ngFor' directive is used to repeat a block of HTML for each item in a list. 
+          It iterates over the list and renders the element for each item.
+        </p>
+        
+        <h5>Syntax</h5>
+        <code>{{ngfor}}</code>
+        
+        <h5>Example</h5>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- [ngClass] Directive -->
+    <div class="card mb-3">
+      <div class="card-header">
+        [ngClass] Directive
+      </div>
+      <div class="card-body">
+        <h5>Description</h5>
+        <p>
+          The '[ngClass]' directive allows you to dynamically add or remove CSS classes on an element 
+          based on conditions.
+        </p>
+        
+        <h5>Syntax</h5>
+        <code>{{ngclass}}</code>
+        
+        <h5>Example</h5>
+        <button class="btn btn-info mb-3" (click)="toggleActive()">Toggle Active State</button>
+        <p [ngClass]="{ 'bg-success text-white p-2': isActive, 'p-2': !isActive }">This paragraph has conditional styling.</p>
+      </div>
+    </div>
+  
+    <!-- [ngStyle] Directive -->
+    <div class="card mb-3">
+      <div class="card-header">
+        [ngStyle] Directive
+      </div>
+      <div class="card-body">
+        <h5>Description</h5>
+        <p>
+          The '[ngStyle]' directive allows you to set multiple inline CSS styles for an element dynamically 
+          based on expressions.
+        </p>
+        
+        <h5>Syntax</h5>
+        <code>{{ngstyle}}</code>
+        
+        <h5>Example</h5>
+        <button class="btn btn-secondary mb-3" (click)="changeColor()">Change Color</button>
+        <p [ngStyle]="{ 'color': textColor }" class="font-weight-bold">This text color changes dynamically.</p>
+      </div>
+    </div>
+  </div>
+  <app-custom-directives></app-custom-directives>

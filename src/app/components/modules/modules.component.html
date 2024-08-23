@@ -1,0 +1,74 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Modules</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What are Modules in Angular ?
+        </div>
+        <div class="card-body">
+            <p>
+                Modules in Angular are a way to organize your application into smaller, reusable units. They help you
+                structure your code, improve maintainability, and promote code reusability.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Key components of a module:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Declarations: Components, directives, and pipes that belong to the module.</li>
+                <li>Imports: Other modules that this module depends on.</li>
+                <li>Exports: Components, directives, and pipes that can be used by other modules.</li>
+                <li>Providers: Services that are provided by the module.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Example:
+        </div>
+        <div class="card-body">
+            <pre><code>
+                {{code}}
+            </code></pre>
+            <p>In this example,</p>
+            <ul>
+                <li>The AppModule is the root module of the application.</li>
+                <li>It declares the AppComponent and MyComponent.</li>
+                <li>It imports the BrowserModule, which provides core functionalities like DOM manipulation.</li>
+                <li>It does not have any providers.</li>
+                <li>The bootstrap property specifies the root component of the application.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Benefits of using modules:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Organization: Breaks down your application into logical units.</li>
+                <li>Reusability: Modules can be shared across different projects.</li>
+                <li>Maintainability: Easier to manage and update code within modules.</li>
+                <li>Lazy loading: Modules can be lazy loaded, meaning they are only loaded when needed, improving
+                    performance.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Best practices for creating modules:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Create modules for related components, directives, and pipes.</li>
+                <li>Keep modules small and focused.</li>
+                <li>Avoid circular dependencies between modules.</li>
+                <li>Use lazy loading for modules that are not required on initial page load.</li>
+            </ul>
+            <p>By effectively using modules, you can structure your Angular applications in a more organized and
+                maintainable way.</p>
+        </div>
+    </div>
+</div>

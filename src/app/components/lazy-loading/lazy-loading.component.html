@@ -1,0 +1,67 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Lazy Loading in Angular</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is Lazy Loading in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Lazy loading in Angular is a technique that allows you to load modules on demand, rather than loading
+                them all at once when the application starts. This can improve the initial load time of your
+                application, especially for larger applications with many modules.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            How it works:
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Create a lazy-loaded module: Define a separate module and configure it to be lazy-loaded.</li>
+                <li>Load the module dynamically: Use the RouterModule.forChild method to create a child router module
+                    and load it dynamically when a specific route is activated.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Example:
+        </div>
+        <div class="card-body">
+            <pre><code>
+                {{code}}
+            </code></pre>
+            <p>In this example:</p>
+            <ul>
+                <li>The LazyLoadedModule is configured to be lazy-loaded using RouterModule.forChild.</li>
+                <li>The AppRoutingModule loads the LazyLoadedModule dynamically when the /lazy route is activated.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Benefits of lazy loading:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Improved initial load time: Only the necessary modules are loaded initially.</li>
+                <li>Better user experience: Users can start interacting with the application faster.</li>
+                <li>Smaller bundle size: The initial bundle size is smaller, leading to faster downloads.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            Best practices for lazy loading:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Lazy load modules that are not required on initial page load.</li>
+                <li>Keep lazy-loaded modules small and focused.</li>
+                <li>Use code splitting to further optimize bundle sizes.</li>
+            </ul>
+            <p>By effectively using lazy loading, you can improve the performance and user experience of your Angular
+                applications.</p>
+        </div>
+    </div>
+</div>

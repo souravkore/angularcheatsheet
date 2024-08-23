@@ -1,0 +1,129 @@
+<!-- <h1>Angular Components Cheatsheet</h1>
+
+<h2>Component Creation</h2>
+<p>Create a new component using the Angular CLI: <code>ng generate component my-component</code>.</p>
+
+<h2>&#64;Input Decorator</h2>
+<p>The `&#64;Input()` decorator allows you to pass data from a parent component to a child component.</p>
+<code>
+<app-child [childData]="parentData"></app-child>
+</code>
+
+<h2>&#64;Output Decorator</h2>
+<p>The `&#64;Output()` decorator allows the child component to emit events back to the parent component.</p>
+<code>
+
+<app-child (notify)="onNotify($event)"></app-child>
+</code>
+<p><strong>Output:</strong> When the child component emits the `notify` event, the parent component reacts to it by triggering the `onNotify()` function.</p> -->
+
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Angular Components Cheatsheet</h1>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            What is components in Angular ?
+        </div>
+        <div class="card-body">
+            <p>Components are the building blocks of Angular applications. They are reusable pieces of UI that
+                encapsulate a specific functionality and can be nested within each other.</p>
+        </div>
+    </div>
+    <!-- Component Creation -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Component Creation
+        </div>
+        <div class="card-body">
+            <p>To create a new component using the Angular CLI, run the following command:</p>
+            <code>ng generate component my-component</code>
+            <p><strong>Output:</strong> This will generate a new component with four files: `.ts`, `.html`, `.css`, and
+                `.spec.ts`.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Key components of a component:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Template: The HTML structure of the component.</li>
+                <li>Styles: The CSS styles that apply to the component.</li>
+                <li>Logic: The TypeScript code that defines the component's behavior.</li>
+            </ul>
+            <pre>
+                <code>
+                    {{code}}
+                </code>
+            </pre>
+            <ul>
+                <li>'&#64;Component' decorator: This decorator defines the component and its properties.</li>
+                <li>selector: This property specifies the selector that you can use in your HTML template to reference
+                    the component.</li>
+                <li>templateUrl: This property specifies the path to the component's HTML template.</li>
+                <li>styleUrls: This property specifies the paths to the component's CSS styles.</li>
+            </ul>
+            <h6>Using components in your template:</h6>
+            <p>Once you've created a component, you can use it in your HTML template like this:</p>
+            <p>
+                HTML
+            </p>
+            <code>
+                {{codeHTML}}
+            </code>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            Benefits of using components:
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Reusability: Components can be reused in multiple places within your application.</li>
+                <li>Modularity: They help organize your code into smaller, more manageable units.</li>
+                <li>Maintainability: Components are easier to update and maintain.</li>
+            </ul>
+            <p>By understanding and effectively using components, you can create well-structured and maintainable
+                Angular applications.</p>
+        </div>
+    </div>
+
+    <!-- @Input Decorator -->
+    <div class="card mb-3">
+        <div class="card-header">
+            &#64;Input Decorator
+        </div>
+        <div class="card-body">
+            <app-child [childData]="parentData"></app-child>
+            <p>The <code>&#64;Input()</code> decorator allows you to pass data from a parent component to a child
+                component.</p>
+            <code>
+            <!-- Parent Component -->
+            &lt;app-child [childData]="parentData"&gt;&lt;/app-child&gt;
+            </code>
+            <p><strong>Output:</strong> The <code>childData</code> will be passed from the parent component to the child
+                component and can be used within the child component.</p>
+        </div>
+    </div>
+
+    <!-- @Output Decorator -->
+    <div class="card mb-3">
+        <div class="card-header">
+            &#64;Output Decorator
+        </div>
+        <div class="card-body">
+            <app-child (notify)="onNotify($event)"></app-child>
+            <p>The <code>&#64;Output()</code> decorator allows the child component to emit events back to the parent
+                component.</p>
+            <code>
+            <!-- Parent Component -->
+            &lt;app-child (notify)="onNotify($event)"&gt;&lt;/app-child&gt;
+            </code>
+            <p><strong>Output:</strong> When the child component emits the <code>notify</code> event, the parent
+                component reacts by executing the <code>onNotify()</code> function.</p>
+        </div>
+    </div>
+</div>
