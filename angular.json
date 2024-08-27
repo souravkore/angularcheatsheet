@@ -23,8 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-cheatsheet",
-            "baseHref": "angularcheatsheet",
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -41,7 +40,11 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "deploy": "ng build --configuration production --output-path=docs && git add docs && git commit -m 'Update build files' && git subtree push --prefix docs origin gh-pages"
+              }
+            ]
           },
           "configurations": {
             "production": {
